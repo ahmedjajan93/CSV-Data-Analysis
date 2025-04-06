@@ -68,9 +68,11 @@ if button:
                 st.write(result)
 
                 with st.expander("See generated code"):
+                  
                     st.code(f"# Query: {query}\n# Response:\n{result}")
 
             except Exception as e:
                 st.write("The server is busy. Please try again later.")
+                st.error(e)
                 
         st.warning("Please upload a CSV file and enter a query.")
