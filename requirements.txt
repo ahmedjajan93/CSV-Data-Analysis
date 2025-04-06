@@ -1,6 +1,6 @@
-langchain-core==0.1.0
-langchain-community==0.0.20
-huggingface-hub==0.19.4
-streamlit==1.29.0
-pandas==2.1.4
+streamlit
+langchain-community
+tabulate
+huggingface_hub 
+langchain
 dotenv
