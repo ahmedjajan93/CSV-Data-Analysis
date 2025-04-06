@@ -18,7 +18,7 @@ data = st.file_uploader('Upload Your File', type='csv')
 
 # Model selection
 model_choice = st.radio("Choose Model", 
-                        ["FLAN-T5 (Fast)", "google-flan", "StarCoder (Code)"])
+                        ["FLAN-T5 (Fast)", "AutoGluon", "StarCoder (Code)"])
 
 # Cached function to load CSV
 @st.cache_data
@@ -30,7 +30,7 @@ def load_csv(file):
 def load_model(choice):
     repo_ids = {
         "FLAN-T5 (Fast)": "google/flan-t5-large",
-        "google-flan": "google/flan-t5-large",
+        "AutoGluon": "tabular-predictor",
         "StarCoder (Code)": "bigcode/starcoder"
     }
     
