@@ -73,6 +73,5 @@ if button:
 
             except Exception as e:
                 st.write("The server is busy. Please try again later.")
-                st.error(e)
-                
+              
         st.warning("Please upload a CSV file and enter a query.")
